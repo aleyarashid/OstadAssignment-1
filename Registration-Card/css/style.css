@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/registration1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Registration Card Start */
+.registration-part {
+  width: 100%;
+  height: 100vh;
+}
+.registration-card {
+  width: 700px;
+  height: 500px;
+  background-color: rgb(103, 172, 23);
+  opacity: 0.7;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: ; */
+  opacity: 1;
+}
+
+.btn-grad-sbtn {
+  background-image: linear-gradient(to right, #5c258d 0%, #4389a2 51%, #5c258d 100%);
+  padding: 5px 20px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 5px;
+  display: inline;
+}
+
+.btn-grad-sbtn:hover {
+  background-position: right top; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.btn-grad-cncl {
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  padding: 5px 20px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 5px;
+  display: inline;
+}
+
+.btn-grad-cncl:hover {
+  background-position: right top; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Registration Card End */
