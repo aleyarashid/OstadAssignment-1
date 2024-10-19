@@ -29,22 +29,22 @@
  {
      switch($avg){
          case ($avg>=80 && $avg<=100):
-         echo "Grade A+";
+         echo "Grade: A+";
          break;
          case ($avg>=70 && $avg<80):
-         echo "Grade A";
+         echo "Grade: A";
          break;
          case ($avg>=60 && $avg<70):
-         echo "Grade A-";
+         echo "Grade: A-";
          break;
          case ($avg>=50 && $avg<60):
-         echo "Grade B";
+         echo "Grade: B";
          break;
          case ($avg>=40 && $avg<50):
-         echo "Grade C";
+         echo "Grade: C";
          break;
          case ($avg>=33 && $avg<40):
-         echo "Grade D";
+         echo "Grade: D";
          break;
          default:
          echo "Fail";
