@@ -1,7 +1,7 @@
 <?php
  
   $sub1= 78;
-  $sub2= 95;
+  $sub2= 60;
   $sub3= 83;
   $sub4= 72;    
   $sub5= 70;
@@ -17,6 +17,18 @@
     {
       return true;
     }
+ }
+
+ function passFail($sub)
+ {
+     if($sub<33)
+     {
+         return false;
+     }
+     else
+     {
+         return true;
+     }  
  }
 
  function averageCal($s1,$s2,$s3,$s4,$s5){
@@ -53,18 +65,28 @@
  }
 if(marksValidation($sub1) && marksValidation($sub2) && marksValidation($sub3) && marksValidation($sub4) && marksValidation($sub5))
 {
+    if(passFail($sub1) && passFail($sub2) && passFail($sub3) && passFail($sub4) && passFail($sub5))
+    {
+      $averageMarks = averageCal($sub1,$sub2,$sub3,$sub4,$sub5);
+
+      echo "Total Marks: ".$totalMarks;
+  
+      echo "\n";
+  
+      printf("Average Marks:%.2f",$averageMarks);
+  
+      echo "\n";
+  
+      gradeCalculation($averageMarks);
+
+    }
+    else
+    {
+        echo "One Subject is Fail";
+    }
+
     
-    $averageMarks = averageCal($sub1,$sub2,$sub3,$sub4,$sub5);
-
-    echo "Total Marks: ".$totalMarks;
-
-    echo "\n";
-
-    printf("Average Marks:%.2f",$averageMarks);
-
-    echo "\n";
-
-    gradeCalculation($averageMarks);
+    
 
 }
 else{
